@@ -17,8 +17,8 @@
                                     </nuxt-link>
                                 
                             </div>
-                            <el-steps :active="statActive" align-center>
-                                <el-step title="Step 1" description="Email" status="success">
+                            <el-steps :active="statActive" align-center finish-status="success">
+                                <el-step title="Step 1" description="Email">
                                     a
                                 </el-step>
                                 <el-step title="Step 2" description="Personal Details">
@@ -31,6 +31,19 @@
                                     j
                                 </el-step>
                             </el-steps>
+                            <div v-if="statActive==0" class="block">
+                                a
+                            </div>
+                            <div v-if="statActive==1" class="block">
+                                d
+                            </div>
+                            <div v-if="statActive==2" class="block">
+                                hg
+                            </div>
+                            <div v-if="statActive==3" class="block">
+                                hj
+                            </div>
+                            <el-button @click="statActive++%4" type="text" style="float:right">Next <i class="el-icon-arrow-right el-icon-right"></i></el-button>
                         </el-card>
                     </el-col>
                     <el-col :span=8>&nbsp;</el-col>
