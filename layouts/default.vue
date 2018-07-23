@@ -9,7 +9,8 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 body{
   margin: 0;
-  padding: 0
+  padding: 0;
+  background-color: aliceblue
 }
 *{
   font-family: Roboto

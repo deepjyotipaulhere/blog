@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="background-color:aliceblue">
         <el-container>
             <el-main>
                 <el-row>
